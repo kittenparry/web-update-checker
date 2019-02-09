@@ -1,0 +1,5 @@
+#dependencies
+/node_modules
+#site info
+program/saved_sites
+site_names.txt

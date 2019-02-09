@@ -1,0 +1,14 @@
+{
+  "name": "web-update-checker",
+  "version": "0.0.1",
+  "description": "Check for updates on websites periodically. Like RSS but not really.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Edvin Boul",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.4"
+  }
+}

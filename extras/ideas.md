@@ -1,0 +1,15 @@
+# Ideas/To-do
+- [ ] probably save a read of the site at the time and reread from it
+  - [ ] not to cache (memory) and to a file instead?
+- [ ] ability to visit the page
+  - [ ] use opera if possible?
+  - [ ] reset update notification on visit?
+- [x] read website links from a text file
+- [ ] ~~probably tkinter and not flask~~
+  - [x] or maybe electron
+  - [ ] ~~with typescript if doable?~~
+- [ ] ability to set time between updates
+  - [ ] probably something between 30mins to 12-24 hours?
+  - [ ] button to manually get content before timer
+- [ ] maybe a service, minimized version as well?
+- [x] names: update-checker, not-rss, web-update-checker
