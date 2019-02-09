@@ -10,5 +10,10 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^4.0.4"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "puppeteer": "^1.12.2",
+    "request-promise": "^4.2.2"
   }
 }

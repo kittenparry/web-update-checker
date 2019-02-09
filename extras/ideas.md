@@ -3,6 +3,7 @@
   - [ ] not to cache (memory) and to a file instead?
 - [ ] ability to visit the page
   - [ ] use opera if possible?
+    - [ ] probably an option to select the browser?
   - [ ] reset update notification on visit?
 - [x] read website links from a text file
 - [ ] ~~probably tkinter and not flask~~
@@ -13,3 +14,4 @@
   - [ ] button to manually get content before timer
 - [ ] maybe a service, minimized version as well?
 - [x] names: update-checker, not-rss, web-update-checker
+- [ ] vpn?
