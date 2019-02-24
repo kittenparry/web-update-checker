@@ -3,30 +3,37 @@ import tkinter as tk
 class Gui(tk.Frame):
 	def __init__(self, master=None):
 		tk.Frame.__init__(self, master)
+		self.read_data = self.read_file()
+		# maybe spawn loading here?
 		self.render_elements()
 		
 	def render_elements(self):
-		self.add_text = tk.Entry()
-		self.add_btn = tk.Button(text='Add Site')
-		self.add_text.pack()
-		self.add_btn.pack()
+		self.entry_add = tk.Entry()
+		self.btn_add = tk.Button(text='Add Site', command=self.add_site)
+		self.entry_add.pack()
+		self.btn_add.pack()
 
-		self.all_label = tk.Label(text='All Sites')
-		self.all_list = tk.Listbox()
-		self.all_list.insert(1, "stuff")
-		self.all_list.insert(2, "more stuff")
-		self.all_label.pack()
-		self.all_list.pack()
+		self.label_all = tk.Label(text='All Sites')
+		self.list_all = tk.Listbox()
+		self.label_all.pack()
+		self.list_all.pack()
 
-		self.updated_label = tk.Label(text='Updated Sites')
-		self.updated_list = tk.Listbox()
-		self.updated_list.insert(1, 'that good never updated site')
-		self.updated_list.insert(2, 'mediocre at best updated site')
-		self.updated_label.pack()
-		self.updated_list.pack()
+		self.label_up = tk.Label(text='Updated Sites')
+		self.list_up = tk.Listbox()
+		self.label_up.pack()
+		self.list_up.pack()
 
-		self.check_now_btn = tk.Button(text='Check Now')
-		self.check_now_btn.pack()
+		self.btn_check = tk.Button(text='Check Now')
+		self.btn_check.pack()
+
+	def read_file(self):
+		# if doesn't exist create empty file with instructions
+		return 'read site list here'
+
+	def add_site(self):
+		self.read_data += entry_add.get()
+		# then save back
+
 
 dict_txt = {
 	'title': 'Not RSS',
