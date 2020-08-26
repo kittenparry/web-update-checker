@@ -1,4 +1,5 @@
 import time
+import re
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -8,6 +9,7 @@ total_time = 0
 start_time = time.time()
 website = 'http://www.python.org'
 print('connecting to %s' % website)
+website_sub = re.sub(r'(https?)|[\\\/:\*\?"<>|]', '', website)
 
 driver_options = Options()
 driver_options.add_argument('--headless')
@@ -26,7 +28,7 @@ content = driver.page_source
 start_time = time.time()
 print('downloading page.')
 
-with open('tests/test.txt', 'w', encoding='utf-8') as f:
+with open('tests/%s.txt' % website_sub, 'w', encoding='utf-8') as f:
 	f.write(content)
 
 end_time = time.time()
