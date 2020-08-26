@@ -1,3 +1,5 @@
 #site info
 saved_sites
 site_names.txt
+geckodriver.log
+tests/
